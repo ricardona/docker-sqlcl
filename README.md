@@ -15,13 +15,13 @@ Oracle SQLcl docker container
 [Download Oracle SQLcl](http://www.oracle.com/technetwork/developer-tools/sqlcl/downloads/index.html)
 
 ```bash
-git clone https://github.com/martindsouza/docker-sqlcl
+git clone https://github.com/ricardona/docker-sqlcl
 
 cd docker-sqlcl
 
 # *** Copy the downloaded sqlcl.zip file into this directory ***
 
-docker build -t martindsouza/docker-sqlcl .
+docker build -t ricardona/docker-sqlcl .
 ```
 
 ## Run
@@ -34,7 +34,7 @@ The following is focused on MacOS / Linux users.
 alias sqlcl="docker run -it --rm \
   --network="host" \
   -v `pwd`:/sqlcl \
-  martindsouza/docker-sqlcl"
+  ricardona/docker-sqlcl"
 ```
 
 A few things about the parameters:
